@@ -1,0 +1,19 @@
+{
+  "name": "chess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chess.js": "^0.10.2",
+    "install": "^0.8.1",
+    "mongoose": "^4.5.0",
+    "npm": "^3.9.5",
+    "twit": "^2.2.4",
+    "webshot": "^0.18.0"
+  }
+}
