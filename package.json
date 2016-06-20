@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async-waterfall": "^0.1.5",
     "chess.js": "^0.10.2",
     "install": "^0.8.1",
     "mongoose": "^4.5.0",
