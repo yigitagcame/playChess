@@ -67,8 +67,8 @@ tweetAction.control = function(tweet){
       }
     ],function(err,result){
 
-      if(!err)
-      if(result.command.type != 'noCommand' && result.command.type != 'command'){
+
+        if(typeof err == null && result.command.type != 'noCommand' && result.command.type != 'command'){
         chessAction.run(result,function(gameInf){
 
         switch (gameInf.status) {
@@ -103,7 +103,7 @@ tweetAction.control = function(tweet){
         });
       }
 
-      if(result.command.type == 'command'){
+      if(typeof err == null && result.command.type && result.command.type == 'command'){
 
         chessAction.doGame(result,function(gameInf){
 
@@ -138,7 +138,7 @@ tweetAction.control = function(tweet){
 
                 gameInf.media_id_string =  image.media_id_string;
 
-                tweetAction.justTweet('Your turn @'+gameInf.wUser +'',gameInf,function(res){
+                tweetAction.justTweet('@'+gameInf.bUser+' is played, your turn @'+gameInf.wUser +'',gameInf,function(res){
                   console.log(res);
                 });
 
@@ -152,6 +152,7 @@ tweetAction.control = function(tweet){
         });
 
       }
+
 
     }
   )
