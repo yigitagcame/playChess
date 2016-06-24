@@ -6,7 +6,6 @@ var mongoose = require('mongoose');
 var config = require('./config.js');
 var textAction = require('./libs/textAction.js');
 var tweetAction = require('./libs/tweetAction.js');
-var tweet = require('./tweet.js');
 
 
 
